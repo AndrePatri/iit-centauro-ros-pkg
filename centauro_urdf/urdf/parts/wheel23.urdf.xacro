@@ -21,14 +21,14 @@
                 <material name="dark_grey" />
             </visual>
 
-            <collision>
+            <!-- <collision>
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
                 <geometry>
                     <mesh
                         filename="${MESH_PATH}/v2/collision/mesh_ankle-yaw_wheel23.stl"
                         scale="0.001 ${mirror*0.001} 0.001" />
                 </geometry>
-            </collision>
+            </collision> -->
         </link>
 
         <joint name="j_wheel_${leg_num}" type="continuous">
@@ -64,7 +64,7 @@
 					<cylinder radius="${wheel23_radius}" length="${wheel23_depth}"/>
 				</geometry> -->
                 <geometry>
-                    <mesh filename="${MESH_PATH}/v2/collision/mesh_wheel23.stl"
+                    <mesh filename="${MESH_PATH}/v2/collision/wheel23_donut.stl"
                         scale="0.001 0.001 ${mirror*0.001}" />
                 </geometry>
                 <material name="black" />
