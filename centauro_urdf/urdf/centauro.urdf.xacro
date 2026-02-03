@@ -27,10 +27,6 @@ abolute paths for mesh paths-->
     <xacro:property name="MESH_PATH" value="package://centauro_urdf/meshes" />
 </xacro:unless>
 
-<xacro:macro name="example_macro">
-  <example_element message="${MESH_PATH}" />
-</xacro:macro>
-
 <!-- configuration -->
 <xacro:arg name="config" default="${ROOT}/urdf/config/centauro.urdf.xacro"/>
 
